@@ -1,0 +1,213 @@
+
+.answer {
+    height: 100%;
+    padding-top: 120px;
+    $gradinent: linear-gradient(360deg, rgba(27, 27, 27, 0) 0%, #1b1b1b 100%), linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #1b1b1b 100%), url("path_to_image");
+    background: $gradinent, url(../img/answers/car@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // .answer__wrapp
+    padding-bottom: 60px;
+    @include mobile {
+        padding-top: 60px;
+    }
+
+    &__wrapp {
+        text-align: center;
+
+    }
+
+    // .answer__title
+
+    &__title {
+        display: block;
+        color: #fff;
+        width: 644px;
+        margin: 0 auto;
+        @include mobile {
+            font-size: 18px;
+            width: auto;
+            margin-bottom: 8px;
+        }
+    }
+
+    // .answer__subtitle
+
+    &__subtitle {
+        line-height: 1.5;
+        color: #fff;
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+
+    // .answer__slider-cards
+
+    &__slider-cards {
+        margin-top: 44px;
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-between;
+        .slick-track {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 10px;
+        }
+        .slick-prev {
+            position: absolute;
+            left: calc(50% - 38.5px);
+            bottom: -60px;
+        }
+        .slick-next {
+            position: absolute;
+            right: calc(50% - 38.5px);
+            bottom: -60px;
+        }
+        @include mobile {
+            margin-top: 24px;
+        }
+    }
+
+    // .answer__slider-card
+
+    &__slider-card {
+        width: 270px;
+        height: 250px;
+        margin-right: 16px;
+        padding: 32px 32px;
+        border-radius: 30px;
+        background-color: rgb(27, 27, 27, 0.5);
+        color: #fff;
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Geologica", sans-serif;
+        p {
+            text-align: left;
+            width: 199px;
+            font-size: 18px;
+        }
+        @include tablet {
+            width: 206px;
+            height: 206px;
+            padding: 20px 0 0 20px;
+            p {
+                width: auto;
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+    }
+
+    // .answer__number
+
+    &__number {
+        width: 44px;
+        height: 44px;
+        padding: 11px 12px 11px 12px;
+        margin-bottom: 32px;
+        border-radius: 100%;
+        background-color: #d43228;
+        text-align: center;
+        @include tablet {
+            width: 36px;
+            height: 36px;
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 11px;
+        }
+    }
+
+    // .answer__desc
+
+    &__desc {
+        margin-top: 37px;
+        display: flex;
+        column-gap: 30px;
+        color: #fff;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    // .answer__years
+
+    &__years, &__points, &__acreage {
+        width: 270px;
+        padding-top: 71px;
+        text-align: left;
+        @include mobile {
+            padding-top: 24px;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    // .answer__text
+
+    &__text {
+        line-height: 1.2;
+        font-size: 52px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.16);
+        margin-bottom: 14px;
+        @include tablet {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+    }
+
+    // .answer__certificates
+
+    &__certificates {
+        width: 236px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    // .answer__contrlos
+
+    &__contrlos {
+        width: 236px;
+        position: absolute;
+        top: 43%;
+        align-items: center;
+    }
+    &__slider-certificates {
+        margin-top: 44px;
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+
+        .slick-track {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 10px;
+        }
+        .slick-prev {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(20%, 0%);
+        }
+        .slick-next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-25%, 0%);
+        }
+        .slick-slide {
+            width: 206px;
+        }
+
+    }
+}
+
+.slider-certificate {
+    border-radius: 20px;
+    width: 190px;
+    height: 266px;
+}

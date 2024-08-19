@@ -1,0 +1,76 @@
+.tow-car {
+    margin-top: 120px;
+    scroll-margin-top: 110px;
+
+
+    // .tow-car__wrapp
+
+    &__wrapp {
+        background-image: url(../img/tow-car/evacuator.jpg);
+        height: 370px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        padding: 62px 65px 72px 600px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        @include tablet {
+            padding: 62px 65px 72px 300px;
+        }
+
+        @include mobile {
+            padding: 20px 20px 0 20px;
+            background-position: 28% 50%;
+
+        }
+
+    }
+
+    // .tow-car__title
+
+    &__title {
+        margin-bottom: 44px;
+        color: #fff;
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 21px;
+        }
+    }
+
+    // .tow-car__subtitle
+
+    &__subtitle {
+        margin-bottom: 20px;
+        color: #fff;
+       @include mobile {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+    }
+
+    // .tow-car__btn
+
+    &__btn {
+        background-color: #69AB40;
+        border-radius: 60px;
+        padding: 14px 14px 14px 40px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        column-gap: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        align-self: flex-start;
+        @include tablet {
+            padding: 6px 6px 6px 30px;
+            font-size: 12px;
+            line-height: 24px;
+            img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+}

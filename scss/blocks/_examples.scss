@@ -1,0 +1,125 @@
+
+.examples {
+    padding-top: 120px;
+    background-color: #F4F4F4;
+    @include tablet {
+        padding-top: 80px;
+    }
+    @include mobile {
+        padding-top: 60px;
+    }
+
+    // .examples__title
+
+    &__title {
+        text-align: center;
+        color: #1B1B1B;
+        @include tablet {
+            margin-bottom: 8px;
+        }
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+
+    // .examples__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1B1B1B;
+        text-align: center;
+        margin-bottom: 44px;
+        @include tablet {
+            margin-bottom: 24px;
+        }
+        @include mobile {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    // .examples__cards
+
+    &__cards {
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include tablet {
+            gap: 15px;
+        }
+        @include mobile {
+            flex-direction: column;
+            row-gap: 24px;
+        }
+    }
+
+    // .examples__card
+
+    &__card {
+        width: 370px;
+        @include tablet {
+            width: 360px;
+        }
+        @include mobile {
+            width: 281px;
+        }
+    }
+    &__car-one {
+        border-radius: 30px;
+        margin-bottom: 10px;
+        @include mobile {
+            border-radius: 20px;
+       }
+    }
+    // .examples__cars
+
+    &__cars {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        margin-bottom: 26px;
+        @include tablet {
+            column-gap: 8px;
+            margin-bottom: 16px;
+        }
+    }
+
+    // .examples__car
+
+    &__car {
+        border-radius: 10px;
+        @include mobile {
+            width: 64px;
+            border-radius: 12px;
+        }
+    }
+
+    // .examples__cards--title
+
+    &__cards--title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #1C1C1C;
+        margin-bottom: 12px;
+        @include mobile {
+            margin-bottom: 8px;
+        }
+    }
+
+    // .examples__cards--subtitle
+
+    &__cards--subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #1C1C1C;
+        @include mobile {
+            line-height: 16px;
+            font-size: 12px;
+        }
+    }
+}

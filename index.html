@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>car-service</title>
+    <link rel="stylesheet" href="./fonts/getvoip.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapp">
+                <nav class="header__nav-list">
+                    <div class="header__logo">
+                        <a href="#!" class="header__logo-icon"><img src="./img/icons/logo.svg" alt=""></a>
+                        <p class="header__text visible-mobile">Автосервис полного цикла в Москве</p>
+                    </div>
+                    <div class="header__adress visible-tablet">
+                        <img src="./img/icons/social/map.svg" alt="">
+                        <p><span>Адрес офиса:</span><br>г.Москва,пр.Вернадского, 36</p>
+                    </div>
+                    <div class="header__social">
+                        <a href="#!" class="btn btn--whatsapp"><img src="./img/icons/social/watsap-green.svg" alt=""></a>
+                        <a href="#!" class="btn btn--telegram"><img src="./img/icons/social/telegram.svg" alt=""></a>
+                        <p class="header__question visible-tablet"><span>Задайте вопрос,</span><br>мы онлайн</p>
+                    </div>
+
+                </nav>
+                <button class="btn btn--price visible-mobile"><a href="#!">Скачать прайс</a></button>
+            </div>
+        </div>
+        <hr>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__wrapp">
+                    <nav class="promo__nav visible-tablet">
+                        <ul class="promo__nav-link">
+                            <li><a href="#partners">Партнеры</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#answer">Акции</a></li>
+                            <li><a href="#budget">Стоимость</a></li>
+                            <li><a href="#examples">Примеры работ</a></li>
+                            <li><a href="#tow-car">Эвакуатор</a></li>
+                            <li><a href="#comments">Отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                        <ul class="promo__contacts visible-tablet">
+                            <li><a href="tel:+74444444444" class="promo__phone">+7 (444) 444-44-44</a></li>
+                            <li><a href="#!" class="promo__order">Заказать звонок</a></li>
+                        </ul>
+                    </nav>
+                    <div class="promo__content">
+                        <h3 class="promo__title title">Ремонтируем и обслуживаем ваш автомобиль бережно, с любовью, как для себя </h3>
+                        <div class="promo__icons">
+                            <div class="promo__icon block-50">
+                                <div class="promo__tick"><img src="./img/icons/tick.svg" alt="tick"></div>
+                                Оплачиваете после ремонта
+                            </div>
+                            <div class="promo__icon block-50">
+                                <div class="promo__tick"><img src="./img/icons/tick.svg" alt="tick"></div>
+                                Работаем официально с оформлением заказ-нарядов и чеков
+                            </div>
+                            <div class="promo__icon">
+                                <div class="promo__tick"><img src="./img/icons/tick.svg" alt="tick"></div>
+                                Только оригинальные запчасти
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn--value">Рассчитать стоимость</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="partners" id="partners">
+            <div class="container">
+                <div class="partners__wrapp">
+                    <h2 class="partners__title title">Обслуживаем <br>все популярные марки</h2>
+                    <p class="partners__subtitle subtitle">Для юридических и физических лиц</p>
+                    <div class="partners__slider">
+                        <div><img class="partners__slider-img" src="./img/partners/honda.jpg" alt=""></div>
+                        <div><img class="partners__slider-img" src="./img/partners/mers.jpg" alt=""></div>
+                        <div><img class="partners__slider-img" src="./img/partners/mini.jpg" alt=""></div>
+                        <div><img class="partners__slider-img" src="./img/partners/opel.jpg" alt=""></div>
+                        <div><img class="partners__slider-img" src="./img/partners/tayota.jpg" alt=""></div>
+                        <div><img class="partners__slider-img" src="./img/partners/volvo.jpg" alt=""></div>
+                        <div><img class="partners__slider-img" src="./img/partners/vw.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services__desc">
+                    <h2 class="services__title title">Все услуги в одном <br>месте</h2>
+                    <p class="services__subtitle subtitle">Несем полную ответственность и даем бессрочную гарантию</p>
+                </div>
+
+                <ul class="services__cards">
+                    <li class="services__card">
+                        <div class="services__desc">
+                            <h3 class="services__card-title">Ремонт бензиновых и дизельных двигателей</h3>
+                            <p class="services__card-text">Авто любых марок</p>
+                            <div class="services__nuber">01</div>
+                        </div>
+                        <div class="services__btns">
+                            <button class="btn btn--request"><a href="#!"></a>Оставить заявку</button>
+                            <button class="btn btn--price-services"><a href="#!">Скачать прайс</a></button>
+                        </div>
+                    </li>
+                    <li class="services__card">
+                        <div class="services__desc">
+                            <h3 class="services__card-title">Все типы кузовного ремонта</h3>
+                            <p class="services__card-text">Ремонт бампера, копота, ремонт после ДТП</p>
+                            <div class="services__nuber">02</div>
+                        </div>
+                        <div class="services__btns">
+                            <button class="btn btn--request"><a href="#!"></a>Оставить заявку</button>
+                            <button class="btn btn--price-services"><a href="#!">Скачать прайс</a></button>
+                        </div>
+                    </li>
+                    <li class="services__card">
+                        <div class="services__desc">
+                            <h3 class="services__card-title">Электрика</h3>
+                            <p class="services__card-text">Установка сигнализаций, парктроников, доп. оборудования, мультимедийных систем</p>
+                            <div class="services__nuber">03</div>
+                        </div>
+                        <div class="services__btns">
+                            <button class="btn btn--request"><a href="#!"></a>Оставить заявку</button>
+                            <button class="btn btn--price-services"><a href="#!">Скачать прайс</a></button>
+                        </div>
+                    </li>
+
+                    <li class="services__card">
+                        <div class="services__desc">
+                            <h3 class="services__card-title">Ремонт АКПП</h3>
+                            <p class="services__card-text">Роботы, вариаторы, отдельные узлы коробки</p>
+                            <div class="services__nuber">04</div>
+                        </div>
+                        <div class="services__btns">
+                            <button class="btn btn--request"><a href="#!"></a>Оставить заявку</button>
+                            <button class="btn btn--price-services"><a href="#!">Скачать прайс</a></button>
+                        </div>
+                    </li>
+
+                    <li class="services__card">
+                        <div class="services__desc">
+                            <h3 class="services__card-title">Слесарный цех</h3>
+                            <p class="services__card-text">Замена масла, фильтро, тех. обслуживание</p>
+                            <div class="services__nuber">05</div>
+                        </div>
+                        <div class="services__btns">
+                            <button class="btn btn--request"><a href="#!"></a>Оставить заявку</button>
+                            <button class="btn btn--price-services"><a href="#!">Скачать прайс</a></button>
+                        </div>
+                    </li>
+
+                    <li class="services__card">
+                        <div class="services__desc">
+                            <h3 class="services__card-title">Детейлинг</h3>
+                            <p class="services__card-text">Устарнение царапин, оклейка, полировка</p>
+                            <div class="services__nuber">06</div>
+                        </div>
+                        <div class="services__btns">
+                            <button class="btn btn--request"><a href="#!"></a>Оставить заявку</button>
+                            <button class="btn btn--price-services"><a href="#!">Скачать прайс</a></button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="container">
+                <div class="price__wrapp">
+                    <h2 class="price__title title">Гарантируем лучшую цену на рынке. Скачайте полный прайс-лист на все наши услуги с ценами</h2>
+                    <p class="price__subtitle subtitle">Выберите где удобнее получить</p>
+                    <div class="price__btns">
+                        <button class="btn btn--get-whatsapp">
+                            <a href="#!">Получить в WhatsApp</a>
+                            <img src="./img/icons/down.svg" alt="">
+                        </button>
+                        <input name="name" type="tel" required placeholder="Ваш номер телефона" >
+                        <button class="btn btn--price-actions"><a href="#!">Получить прайс</a></button>
+                    </div>
+                    <label class="price__policy">
+                        <input type="checkbox" class="real-checkbox">
+                        <span class="custom-checkbox"></span>
+                        <div class="checkbox-text">Согласен с условиями политики конфиденциальности</div>
+                    </label>
+                    <div class="price__img"></div>
+                    <div class="price__book-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="answer" id="answer">
+            <div class="container">
+                <div class="answer__wrapp">
+                    <h2 class="answer__title title">Ответим, почему вы можете довериться нам</h2>
+                    <p class="answer__subtitle title">И быть полностью спокойны</p>
+                    <div class="answer__slider-cards"  id="slider">
+                        <div class="answer__slider-card">
+                            <div class="answer__number">01</div>
+                            <p>Сертифицированное немецкое оборудование</p>
+                        </div>
+                        <div class="answer__slider-card">
+                            <div class="answer__number">02</div>
+                            <p>Бессррочная гарантия на все работы</p>
+                        </div>
+                        <div class="answer__slider-card">
+                            <div class="answer__number">03</div>
+                            <p>Стоимость фиксированная без скрытых платежей и накруток</p>
+                        </div>
+                        <div class="answer__slider-card">
+                            <div class="answer__number">04</div>
+                            <p>Специалисты, которые могут собрать/разобрать авто с закрытми глазами</p>
+                        </div>
+                    </div>
+                    <div class="answer__desc">
+                        <div class="answer__years">
+                            <div class="answer__text">8 лет</div>
+                            <p>на рынке ремонта авто</p>
+                        </div>
+                        <div class="answer__points">
+                            <div class="answer__text">5.0 б</div>
+                            <p>рейтинг автосервиса на незвисимых порталах</p>
+                        </div>
+                        <div class="answer__acreage">
+                            <div class="answer__text">100 м2</div>
+                            <p>площадь автосервисса</p>
+                        </div>
+
+                        <div class="answer__certificates">
+                            <div class="answer__slider-certificates">
+                                <div><img class="slider-certificate" src="./img/answers/certificate.jpg" alt=""></div>
+                                <div><img class="slider-certificate" src="./img/answers/certificate.jpg" alt=""></div>
+                                <div><img class="slider-certificate" src="./img/answers/certificate.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="budget" id="budget">
+            <div class="container">
+                <div class="budget__wrapp">
+                    <h2 class="budget__title title">заботимся о <br>бюджете</h2>
+                    <p class="budget__subtitle subtitle">Актуальные скидки и акции</p>
+                    <div class="budget__slider--cards">
+                        <div class="budget__slider--card picture-1">
+                            <h2 class="budget__slider--title">Бесплатная диагностика двигателя</h2>
+                            <p class="budget__slider--subtitle">Нажмите на кнопку “Участвовать в акции” чтобы узнать подробности</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+                        <div class="budget__slider--card picture-2">
+                            <h2 class="budget__slider--title">Скидка 20% на ремонт до конца месяца</h2>
+                            <p class="budget__slider--subtitle">Нажмите на кнопку “Участвовать в акции” чтобы узнать подробности</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+                        <div class="budget__slider--card picture-3">
+                            <h2 class="budget__slider--title">Рассрочка под 0% или кредит</h2>
+                            <p class="budget__slider--subtitle">От Тинькофф-банка. <br>За 30 секунд</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+
+                        <div class="budget__slider--card picture-4">
+                            <h2 class="budget__slider--title">Рассрочка под 0% или кредит</h2>
+                            <p class="budget__slider--subtitle">От Тинькофф-банка. <br>За 30 секунд</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+
+                        <div class="budget__slider--card picture-5">
+                            <h2 class="budget__slider--title">Рассрочка под 0% или кредит</h2>
+                            <p class="budget__slider--subtitle">От Тинькофф-банка. <br>За 30 секунд</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+
+                        <div class="budget__slider--card picture-6">
+                            <h2 class="budget__slider--title">Рассрочка под 0% или кредит</h2>
+                            <p class="budget__slider--subtitle">От Тинькофф-банка. <br>За 30 секунд</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+
+                        <div class="budget__slider--card picture-7">
+                            <h2 class="budget__slider--title">Рассрочка под 0% или кредит</h2>
+                            <p class="budget__slider--subtitle">От Тинькофф-банка. <br>За 30 секунд</p>
+                            <a href="#!" class="budget__link">Участвовать в акции</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples" id="examples">
+            <div class="container">
+                <div class="examples__wrapp">
+                    <h2 class="examples__title title">С 2012 года отремонтировали и обслужили бесчисленное количество автомобилей</h2>
+                    <p class="examples__subtitle subtitle">Портфолио работ за 2022-2023 года</p>
+                    <div class="examples__cards">
+                        <div class="examples__card">
+                            <img class="examples__car-one" src="./img/examples/car.jpg" alt="">
+                            <div class="examples__cars">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                            </div>
+                            <h3 class="examples__cards--title">Ремонт двигателя KIA Sorento</h3>
+                            <p class="examples__cards--subtitle">За 2 дня выполнили комплексный ремонт двигателя после аварии</p>
+                        </div>
+                        <div class="examples__card">
+                            <img class="examples__car-one" src="./img/examples/car.jpg" alt="">
+                            <div class="examples__cars">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                            </div>
+                            <h3 class="examples__cards--title">Ремонт двигателя KIA Sorento</h3>
+                            <p class="examples__cards--subtitle">За 2 дня выполнили комплексный ремонт двигателя после аварии</p>
+                        </div>                        <div class="examples__card">
+                            <img class="examples__car-one" src="./img/examples/car.jpg" alt="">
+                            <div class="examples__cars">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                                <img src="./img/examples/car-sm.jpg" class="examples__car" alt="">
+                            </div>
+                            <h3 class="examples__cards--title">Ремонт двигателя KIA Sorento</h3>
+                            <p class="examples__cards--subtitle">За 2 дня выполнили комплексный ремонт двигателя после аварии</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tow-car" id="tow-car">
+            <div class="container">
+                <div class="tow-car__wrapp">
+                    <div class="tow-car__title title">Эвакуатор бесплатно в пределах мкад</div>
+                    <div class="tow-car__subtitle subtitle">Просто напишите нам в WhatApp</div>
+                    <a href="#1" class="tow-car__btn">Написать в whatsapp<img src="./img/icons/social/watsap-white.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="container">
+                <div class="steps__wrapp">
+                    <h2 class="steps__title title">Всего 4 шага к устранению любой неисправности</h2>
+                    <p class="steps__subtitle subtitle">Вашего автомобиля за 1-2 дня</p>
+                    <div class="steps__slider--cards">
+                        <div class="steps__slider--card step-1">
+                            <a href="#!" class="btn btn--step">Шаг 1</a>
+                            <h3 class="steps__card-title">Звоните <br>+7 (495) 444-44-44</h3>
+                            <p class="steps__card-subtitle">На первичной консультации выясняем марку и модель авто, определяем проблему, ориентируем по стоимости.</p>
+                            <span>Или оставляйте заявку на сайте</span>
+                            <a href="#!" class="btn btn--steps">Оставить заявку</a>
+                        </div>
+                        <div class="steps__slider--card step-2">
+                            <a href="#!" class="btn btn--step">Шаг 2</a>
+                            <h3 class="steps__card-title">Диагностика у нас <br>в автосервисе</h3>
+                            <p class="steps__card-subtitle">Проводим полную диагностику, по результатам которой будет точно понятна проблема и способы ее устранения.</p>
+                        </div>
+                        <div class="steps__slider--card step-3">
+                            <a href="#!" class="btn btn--step">Шаг 3</a>
+                            <h3 class="steps__card-title">Обслуживание <br>и ремонт</h3>
+                            <p class="steps__card-subtitle">Выполняем все необходимые работы по ремонту или обслуживанию вашего автомобиля.</p>
+                        </div>
+                        <div class="steps__slider--card step-3">
+                            <a href="#!" class="btn btn--step">Шаг 3</a>
+                            <h3 class="steps__card-title">Обслуживание <br>и ремонт</h3>
+                            <p class="steps__card-subtitle">Выполняем все необходимые работы по ремонту или обслуживанию вашего автомобиля.</p>
+                        </div>
+
+                        <div class="steps__slider--card step-3">
+                            <a href="#!" class="btn btn--step">Шаг 3</a>
+                            <h3 class="steps__card-title">Обслуживание <br>и ремонт</h3>
+                            <p class="steps__card-subtitle">Выполняем все необходимые работы по ремонту или обслуживанию вашего автомобиля.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="comments" id="comments">
+            <div class="container">
+                <div class="comments__wrapp">
+                    <h2 class="comments__title title">Лучше всего <br>о нашей работе </h2>
+                    <p class="comments__subtitle subtitle">Скажут сами клиенты</p>
+                    <div class="comments__slider--cards">
+                        <div class="comments__slider--card">
+                            <img src="./img/comments/comment-1.jpg" alt="comment-1">
+                        </div>
+                        <div class="comments__slider--card">
+                            <img src="./img/comments/comment-2.jpg" alt="comment-2">
+                        </div>
+                        <div class="comments__slider--card">
+                            <img src="./img/comments/comment-3.jpg" alt="comment-3">
+                        </div>
+                        <div class="comments__slider--card">
+                            <img src="./img/comments/comment-4.jpg" alt="comment-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="consultation">
+            <div class="consultation__red"></div>
+            <div class="container">
+                <div class="consultation__wrapp">
+                    <img class="consultation__img" src="./img/consultation/men.png" alt="">
+                    <div class="consultation__desc">
+                        <h2 class="consultation__title title">Получите <br>бесплатную <br>консультацию <br>лучшего мастера</h2>
+                        <div class="consultation__info-work">
+                            <div class="consultation__mode">Пн-Сб с 9:00 до 18:00</div>
+                            <a href="tel:+74444444444" class="consultation__phone">+7 (444) 444-44-44</a>
+                        </div>
+                        <div class="consultation__messenger">
+                            <a href="#!"><img src="./img/icons/social/watsap-green.svg" alt=""></a>
+                            <a href="#!"><img src="./img/icons/social/telegram.svg" alt=""></a>
+                            <div class="consultation__text">Пишите нам <br>в мессенджеры</div>
+                        </div>
+                    </div>
+                    <div class="consultation__content">
+                        <h3 class="title-2">Прямо по телефону:</h3>
+                        <ul class="consultation__list">
+                            <li><span></span>Расскажем как мы работаем и ответим на вопросы;</li>
+                            <li><span></span>Выясним в чем проблема;</li>
+                            <li><span></span>Сориентируем по стоимости и срокам ремонта;</li>
+                            <li><span></span>Если все устроит, запишем вас на удобное время</li>
+                        </ul>
+                        <input name="name" type="tel" required placeholder="Ваш номер телефона">
+                        <a href="tel:+74444444444" class="btn btn--consultation">Перезвоните мне</a>
+                        <label class="price__policy">
+                            <input type="checkbox" class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <div class="checkbox-text">Согласен с условиями политики <br>конфиденциальности</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__title title">Автосервис по ремонту <br>и обслуживанию автомобилей</div>
+                <p>Надежность и функциональность автомобиля напрямую зависит от его технического состояния. Если вы хотите быть уверены, что основные узлы и агрегаты работают исправно, машина не подведет в наиболее ответственный и самый неподходящий момент, то наш автосервис по ремонту и обслуживанию автомобилей в Солнцево, готов гарантировать вам спокойствие. Наши акции Квалифицированный и своевременный сервис авто — главное условие эксплуатации без проблем и неприятных сюрпризов в дороге. Регулярная диагностика и устранение мелких неисправностей не только повышают степень надежности, но и объективно снижают стоимость содержания автомобиля благодаря отсутствию затрат на дорогостоящий ремонт с заменой ответственных деталей и вынужденного простоя, а действующие акции спецпредложения помогут сэкономить без потери в качестве!</p>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__wrapp">
+                    <div class="contacts__addresses">
+                        <div class="contacts__title title">наши контакты</div>
+                        <div class="contacts__address"><img src="./img/icons/contacts/map.svg" alt="">Москва, пр-т Вернадского, 36 </div>
+                        <div class="contacts__working-hours"><img src="./img/icons/contacts/clock.svg" alt="">Пн-Сб с 10:00 до 19:00 </div>
+                        <div class="contacts__phone"><img src="./img/icons/contacts/phone.svg" alt="">+7 (444) 444-44-44</div>
+                        <div class="contacts__mail"><img src="./img/icons/contacts/email.svg" alt="">info@avto.ru</div>
+                        <a href="#!" class="contacts__requisite">Реквизиты для юрлиц.</a>
+                    </div>
+                    <div class="contacts__socials">
+                        <div class="contacts__social">
+                            <a href="#!"><img src="./img/icons/contacts/whatsapp.svg" alt=""></a>
+                            <a href="#!"><img src="./img/icons/contacts/telegram.svg" alt=""></a>
+
+                            <div class="contacts__text"><strong>Пишите,</strong> мы онлайн</div>
+                        </div>
+                        <div class="contacts__messenger">
+                            <a href="#!"><img src="./img/icons/contacts/feedback.svg" alt=""></a>
+                            <a href="#!"><img src="./img/icons/contacts/vk.svg" alt=""></a>
+                            <a href="#!"><img src="./img/icons/contacts/instagram.svg" alt=""></a>
+                            <div class="contacts__text"><strong>Мы в соцсетях</strong></div>
+                        </div>
+                    </div>
+                    <div class="contacts__map"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footeer class="footer">
+        <div class="container">
+            <div class="footer__wrapp">
+                <a href="#!" class="footer__licence">Все права защищены</a>
+                <a href="#!" class="footer__politic">Политика конфиденциальности</a>
+                <a href="#!" class="footer__mechanic">Mechanic 2024</a>
+            </div>
+        </div>
+    </footeer>
+
+
+    <!-- Слайдер -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main/main.js"></script>
+
+</body>
+</html>

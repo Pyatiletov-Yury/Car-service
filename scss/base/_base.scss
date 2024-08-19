@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap);
+
+// font-family: 'GetVoIP Grotesque';
+// font-family: "Geologica", sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Geologica", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0.3px;
+	background-color: #F4F4F4;
+	color: #000;
+}
+
+a:focus, button:focus {
+	outline-offset: 1px;
+	outline: #005fcc auto 1px;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+
+	@include tablet {
+        width: 768px;
+    }
+
+    @include mobile {
+        width: 320px;
+    }
+}
+
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.visible-tablet {
+    @include tablet {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}

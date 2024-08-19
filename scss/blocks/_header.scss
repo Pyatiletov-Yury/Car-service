@@ -1,0 +1,219 @@
+header {
+    height: 810px;
+    background-color: rgba(27, 27, 27, 0.4);
+    $gradinent:linear-gradient(180deg, rgba(27, 27, 27, 0.4), rgba(27, 27, 27, 0) 0%, #1b1b1b 100%);
+    background-image: $gradinent, url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: $gradinent, url('../img/header@2x.jpg');
+    }
+    @include mobile {
+        height: 566px;
+    }
+}
+
+hr {
+    border: 1px solid rgb(255, 255, 255, 0.16);
+}
+
+.header {
+    padding: 20px 0 131px 0;
+    padding-bottom: 44px;
+    @include mobile {
+        padding: 14px 0 0 0;
+    }
+
+    &__wrapp {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile {
+            margin-bottom: 14px;
+        }
+    }
+
+
+    // .header__nav-list
+
+    &__nav-list {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 69px;
+    }
+
+    // .header__logo
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        p {
+            width: 144px;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 20px;
+            color: #979797;
+        }
+    }
+
+    // .header__adress
+
+    &__adress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        p {
+            width: 204px;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    // .header__social
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        p {
+            margin-left: 12px;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.promo {
+    padding-top: 16px;
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+    }
+    // .promo__nav-link
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 91px;
+    }
+    &__nav-link {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+
+        li {
+            a {
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #fff;
+                @include tablet {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    // .promo__phone
+
+    &__phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+
+    // .promo__order
+
+    &__order {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #d43228;
+    }
+
+    // .promo__title
+
+    &__title {
+        margin-bottom: 52px;
+        width: 815px;
+        color: #fff;
+        @include tablet {
+            width: 615px;
+            font-size: 28px;
+        }
+        @include mobile {
+            width: 280px;
+            font-size: 18px;
+        }
+    }
+
+    // .promo__icons
+
+    &__icons {
+        margin-bottom: 52px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        color: #fff;
+        @include mobile {
+            gap: 10px;
+        }
+    }
+
+    // .promo__icon
+
+    &__icon {
+        width: 181px;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        @include mobile {
+            width: 100%;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__tick {
+        margin-bottom: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 100%;
+        background-color: #d43228;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.block-50 {
+    @include mobile {
+        flex: 1;
+    }
+}

@@ -1,0 +1,73 @@
+.slick-list {
+    overflow: hidden;
+}
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-slide .slick-active{
+    width: 206px;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.slick-dots li {
+    list-style: none;
+
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 15px;
+    background-color: #b0acac;
+    border-radius: 100%;
+
+}
+
+.slick-dots .slick-active button {
+    background-color: transparent;
+    border: 2px solid red;
+}
+
+
+.answer__slider-cards {
+    position: relative;
+    padding: 0px 5px;
+
+
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    border: none;
+    @include mobile {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    background: url(../img/partners/arrow-left.svg) 0 0 / 100% no-repeat;
+    left: 36%;
+
+}
+
+.slick-next  {
+    right: 0;
+    background: url(../img/partners/arrow-right.svg) 0 0 / 100% no-repeat;
+    right: 36%;
+
+}

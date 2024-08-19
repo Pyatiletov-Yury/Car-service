@@ -1,0 +1,152 @@
+.btn {
+    border-radius: 60px;
+    border: none;
+    &--whatsapp, &--telegram  {
+        @include mobile {
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &--price {
+        padding: 12px 30px;
+        text-align: center;
+        background-color: #D43228;
+        @include tablet {
+            padding: 6px 15px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            @include tablet {
+                font-size: 10px;
+            }
+        }
+    }
+    &--value {
+        padding: 24px 40px;
+        align-self: flex-start;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #D43228;
+        @include tablet {
+            padding: 14px 30px;
+            font-size: 12px;
+        }
+        @include mobile {
+            align-self: normal;
+        }
+    }
+    &--price-services {
+        font-size: 14px;
+        line-height: 24px;
+        a {
+            color: #D43228;
+            @include tablet {
+                font-size: 12px;
+            }
+        }
+    }
+    &--request, &--steps {
+        background-color: #D43228;
+        padding: 12px 30px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #fff;
+        @include tablet {
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+    }
+    &--get-whatsapp {
+        display: flex;
+        column-gap: 29px;
+        align-items: center;
+        padding: 24px 32px;
+        background-color: #fff;
+        text-align: center;
+        border: none;
+        line-height: 24px;
+        @include tablet {
+            max-width: 350px;
+        }
+        @include mobile {
+            padding: 12px 32px;
+
+        }
+        a {
+            color: #000;
+            font-size: 14px;
+            @include mobile {
+                font-size: 12px;
+                font-weight: 200;
+            }
+        }
+    }
+    &--price-actions {
+        padding: 24px 40px;
+        text-align: center;
+        background-color: #D43228;
+        z-index: 1;
+        @include tablet {
+            max-width: 350px;
+        }
+        @include mobile {
+            padding: 16px 62.5px;
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+    }
+    &--step {
+        color: #D43228;
+        padding: 12px 30px;
+        background-color: #fff;
+        border-radius: 60px;
+        align-self: flex-start;
+        margin-bottom: 22px;
+        font-size: 16px;
+        line-height: 20px;
+        @include mobile {
+            padding: 8px 20px;
+            font-size: 12px;
+            margin-bottom: 32px;
+        }
+    }
+    &--steps {
+        align-self: flex-start;
+    }
+    &--consultation {
+        width: 370px;
+        color: #fff;
+        padding: 24px 0;
+        background-color: #D43228;
+        border-radius: 60px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        @include mobile {
+            width: 240px;
+            align-self: normal;
+            padding: 16px 0;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 24px;
+        }
+    }
+}

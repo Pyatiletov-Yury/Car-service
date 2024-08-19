@@ -1,0 +1,147 @@
+.steps {
+    padding: 120px 0 120px 0;
+    background-color: #F4F4F4;
+    @include mobile {
+        padding: 60px 0;
+    }
+    // .steps__title
+
+    &__title {
+        width: 675px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        text-align: center;
+        @include mobile {
+            font-size: 18px;
+            width: 280px;
+        }
+    }
+
+    // .steps__subtitle
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 44px;
+        @include mobile {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 24px;
+        }
+    }
+
+    // .steps__cards
+
+    &__slider--cards {
+        display: flex;
+        .slick-slide {
+            width: 370px !important;
+            @include tablet {
+                width: 282px !important;
+            }
+        }
+        .slick-prev {
+            position: absolute;
+            left: 46%;
+            bottom: -88px;
+            @include tablet {
+                left: 44%;
+            }
+            @include mobile {
+                left: 38%;
+                bottom: -60px;
+            }
+        }
+        .slick-next {
+            position: absolute;
+            right: 46%;
+            bottom: -88px;
+            @include tablet {
+                right: 44%;
+            }
+            @include mobile {
+                right: 38%;
+                bottom: -60px;
+            }
+        }
+    }
+
+    // .steps__card
+
+    &__slider--card {
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 370px;
+        height: 466px;
+        padding: 32px;
+        display: flex !important;
+        flex-direction: column;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        @include tablet {
+            padding: 20px;
+            width: 280px;
+            height: 322px;
+        }
+    }
+
+    // .steps__card-title
+
+    &__card-title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        @include mobile {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+    }
+
+    // .steps__card-subtitle
+
+    &__card-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 106px;
+        @include mobile {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 200;
+            margin-bottom: 52px;
+        }
+    }
+    // .steps__contrlos
+
+    &__contrlos {
+        margin-top: 44px;
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+    }
+}
+
+
+.step-1 {
+    background-image: url(../img/steps/card-1.jpg);
+    span {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        @include mobile {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.step-2 {
+    background-image: url(../img/steps/card-2.jpg);
+}
+
+.step-3 {
+    background-image: url(../img/steps/card-3.jpg);
+}

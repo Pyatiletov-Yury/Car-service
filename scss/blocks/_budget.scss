@@ -1,0 +1,167 @@
+.budget {
+    padding-top: 100px;
+    background-color: #F4F4F4;
+    @include mobile {
+        padding-top: 60px;
+    }
+
+    // .budget__title
+
+    &__title {
+        text-align: center;
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+    }
+
+    // .budget__subtitle
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 44px;
+        @include mobile {
+            font-size: 12px;
+            margin-bottom: 24px;
+        }
+    }
+    // .budget__cards
+
+    &__slider--cards {
+        display: flex;
+        margin-bottom: 88px;
+        flex-direction: column;
+        row-gap: 16px;
+        .slick-slide {
+            width: 370px !important;
+            @include tablet {
+                width: 282px !important;
+            }
+        }
+        .slick-prev {
+            position: absolute;
+            left: 46%;
+            bottom: -88px;
+            @include tablet {
+                left: 44%;
+
+            }
+        }
+        .slick-next {
+            position: absolute;
+            right: 46%;
+            bottom: -88px;
+            @include tablet {
+                right: 44%;
+
+            }
+        }
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+    // .budget__slider--card
+
+    &__slider--card {
+        margin-right: 30px;
+        width: 370px;
+        height: 260px;
+        padding: 32px 78px 32px 32px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        position: relative;
+
+        a {
+           color: #fff;
+           text-decoration: underline;
+           font-size: 12px;
+           line-height: 24px;
+
+        }
+        @include mobile {
+            width: 282px;
+            height: 208px;
+            a {
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    // .budget__slider--title
+
+    &__slider--title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        @include mobile {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    // .budget__slider--subtitle
+
+    &__slider--subtitle {
+        max-width: 190px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        @include mobile {
+            font-size: 12px;
+            line-height: 16px;
+            max-width: 166px;
+        }
+    }
+
+    // .budget__link
+
+    &__link {
+        position: absolute;
+        bottom: 32px;
+
+    }
+
+    // .budget__contrlos
+
+    &__contrlos {
+        margin-top: 44px;
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+    }
+}
+
+.picture-1 {
+    background-image: url(../img/budget/rectangle-1.jpg);
+
+}
+.picture-2 {
+    background-image: url(../img/budget/rectangle-2.jpg);
+    a {
+        color: #D43228;
+     }
+}
+
+.picture-3 {
+    background-image: url(../img/budget/rectangle-3.jpg);
+}
+
+.picture-4 {
+    background-color: green;
+}
+
+.picture-5 {
+    background-color: grey;
+}
+
+.picture-6 {
+    background-color: greenyellow;
+}
+
+.picture-7 {
+    background-color: #D43228;
+}

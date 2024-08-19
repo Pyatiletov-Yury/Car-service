@@ -1,0 +1,44 @@
+
+
+.footer {
+    background-color: #1B1B1B;
+    padding: 67px 0 64px 0;
+    display: block;
+    @include mobile {
+        padding: 60px 0 60px 20px;
+
+    }
+    // .footer__wrapp
+
+    &__wrapp {
+    display: flex;
+    justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+            row-gap: 12px;
+        }
+    }
+
+    // .footer__licence
+
+    &__licence, &__mechanic, &__politic {
+        color: #fff;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    // .footer__politic
+
+    &__politic {
+        color: #D43228;
+        text-decoration: underline !important;
+    }
+
+    // .footer__mechanic
+
+    &__mechanic {
+        text-decoration: underline !important;
+    }
+}
