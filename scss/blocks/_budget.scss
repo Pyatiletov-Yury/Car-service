@@ -110,9 +110,11 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 200;
+        @include tablet {
+            line-height: 1;
+        }
         @include mobile {
             font-size: 12px;
-            line-height: 16px;
             max-width: 166px;
         }
     }
